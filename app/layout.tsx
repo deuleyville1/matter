@@ -3,14 +3,14 @@ import './globals.css'
 import { GithubIcon } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Matterparty! ',
-  description: 'A comprehensive, community-owned directory of Matter-compatible smart home devices.',
+  title: '🥳 matter.party! ',
+  description: 'A community-built directory of Matter-compatible smart home devices.',
   keywords: ['matter', 'smart home', 'iot', 'connected devices', 'home automation'],
   metadataBase: new URL('https://matter.party'),
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    siteName: 'Matter Device Directory',
+    siteName: '🥳 matter.party!',
   },
 }
 

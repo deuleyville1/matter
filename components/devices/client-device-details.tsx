@@ -1,6 +1,6 @@
 'use client'
 
-import type { Device } from "@/lib/types/device"
+import type { Device } from "@/lib/schema/device"
 import { DeviceDetails } from "./device-details"
 
 export function ClientDeviceDetails({ device }: { device: Device }) {

@@ -1,7 +1,7 @@
 ---
 general_info:
   make: "Aqara"
-  model: "Aqara Hub M3"
+  model: "Hub M3"
   type: "controller"
 
 product_info:

@@ -30,22 +30,6 @@ export function ControllerDeviceDetails({ device }: ControllerDeviceDetailsProps
           </Badge></dd>
         </div>
       )}
-      {device_info?.usb_port !== null && (
-        <div>
-          <dt className="font-medium">USB Port</dt>
-          <dd><Badge variant={device_info?.usb_port ? "secondary" : "outline"}>
-            {device_info?.usb_port ? "Yes" : "No"}
-          </Badge></dd>
-        </div>
-      )}
-      {device_info?.battery_backup !== null && (
-        <div>
-          <dt className="font-medium">Battery Backup</dt>
-          <dd><Badge variant={device_info?.battery_backup ? "secondary" : "outline"}>
-            {device_info?.battery_backup ? "Yes" : "No"}
-          </Badge></dd>
-        </div>
-      )}
       {device_info?.ir_controller !== null && (
         <div>
           <dt className="font-medium">IR Controller</dt>

@@ -1,5 +1,5 @@
 import { Badge } from "@/components/ui/badge"
-import type { LockDevice } from "@/lib/types/device"
+import type { LockDevice } from "@/lib/schema/device"
 
 interface LockDeviceDetailsProps {
   device: LockDevice
@@ -15,13 +15,13 @@ export function LockDeviceDetails({ device }: LockDeviceDetailsProps) {
     { key: 'unlock_with_fingerprint', label: 'Fingerprint' },
     { key: 'unlock_with_facial_recognition', label: 'Face Recognition' },
     { key: 'unlock_with_proprietary', label: 'Proprietary', variant: 'destructive' as const },
-  ].filter(method => device_info[method.key as keyof typeof device_info])
+  ].filter(method => device_info && device_info[method.key as keyof typeof device_info])
 
   // Group connectivity methods
   const connectivityMethods = [
     { key: 'bluetooth', label: 'Bluetooth' },
     { key: 'wifi', label: 'WiFi' },
-  ].filter(method => device_info[method.key as keyof typeof device_info])
+  ].filter(method => device_info && device_info[method.key as keyof typeof device_info])
 
   return (
     <dl className="device-details">
@@ -51,7 +51,7 @@ export function LockDeviceDetails({ device }: LockDeviceDetailsProps) {
         </div>
       )}
 
-      {device_info.battery && (
+      {device_info?.battery && (
         <div>
           <dt className="font-medium">Power</dt>
           <dd className="text-muted-foreground">

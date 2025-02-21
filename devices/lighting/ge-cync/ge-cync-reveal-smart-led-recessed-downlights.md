@@ -1,7 +1,7 @@
 ---
 general_info:
   make: "GE Lighting, a Savant company"
-  model: "GE Cync Full Color reveal® Smart LED Recessed Downlights, 6in"
+  model: "Cync Full Color reveal® Smart LED Recessed Downlights, 6in"
   type: "light"
 
 product_info:

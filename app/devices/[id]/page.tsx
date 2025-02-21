@@ -44,7 +44,7 @@ export async function generateMetadata({ params }: { params: { id: string } }): 
   ].filter(Boolean) as string[]  // Filter out nullish values
 
   const metadata: Metadata = {
-    title: `${device.general_info.make} ${device.general_info.model} - Matter Device Directory`,
+    title: `🥳 ${device.general_info.make} ${device.general_info.model} // matter.party!`,
     description: `Specifications and details for the ${device.general_info.make} ${device.general_info.model} Matter-compatible ${device.general_info.type}`,
     openGraph: {
       title: `${device.general_info.make} ${device.general_info.model}`,

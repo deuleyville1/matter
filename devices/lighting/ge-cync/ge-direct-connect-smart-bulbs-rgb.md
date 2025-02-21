@@ -1,7 +1,7 @@
 ---
 general_info:
   make: "GE Lighting, a Savant company"
-  model: "Direct Connect Smart Bulbs (RGB)"
+  model: "Cync Direct Connect Smart Bulbs (RGB)"
   type: "light"
 
 product_info:
